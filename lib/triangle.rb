@@ -14,7 +14,7 @@ def kind
     raise TriangleError
   elsif self.first_size == 0 && self.second_size == 0 && self.third_size == 0 
     raise TriangleError
-  elsif self.first_size <= 0 || self.second_size <= 0 || self.third_size <= 0 
+  elsif self.first_size < 0 || self.second_size < 0 || self.third_size < 0 
     raise TriangleError
   elsif self.first_size == self.second_size && self.first_size == self.third_size
     :equilateral 
